@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from "react";
-import { jobs } from "../../data/jobs";
 import JobCard from "../JobCard";
 import Loader from "../Loader";
 import axios from "axios";
@@ -10,7 +9,7 @@ const RecentJobs = () => {
   const getRecentJobs = async () =>{
     try {
       const {data} = await axios (
-        "https://job-me-server-8uxg.onrender.com/api/v1/jobs/latest"
+        "https://jobme-server-8uxg.onrender.com/api/v1/jobs/latest"
       )
       setJobs(data.jobs);
       setIsLoading(false);
