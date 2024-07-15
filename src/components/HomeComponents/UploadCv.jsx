@@ -17,10 +17,9 @@ const UploadCv = () => {
               aliquam a. In ac in ornare donec consectetur. Nam semper gravida
               enim dolor velit aliquam ut ac.
             </p>
-            {/* <button className="btn btn-info text-white px-3 mt-3 fs-5">
-              Upload Your CV
-            </button> */}
+      
             <Link to = {token ? "/appliedjobs" : "/login"}>
+            <MyButton content = {"Upload Your CV"} />
             </Link>
           </div>
         </div>
